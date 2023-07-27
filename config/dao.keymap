@@ -39,19 +39,9 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-        };
-        lt_n: lt_n {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_N";
-            bindings =
-                <&mo>,
-                <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
+            global-quick-tap;
         };
     };
 
@@ -60,7 +50,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL      &kp GRAVE                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O          &kp P  &mt LPAR LEFT_BRACKET  &mt RPAR RIGHT_BRACKET
+&kp EQUAL      &kp GRAVE                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O          &kp P  &mt_n LEFT_BRACKET LEFT_BRACE  &mt RIGHT_BRACKET RIGHT_BRACE
 &kp MINUS  &mt_n LSHFT A  &mt_n LEFT_CONTROL S    &mt_n LALT D  &mt_n RCMD F           &kp G          &kp H     &mt_n RCMD J  &mt_n RALT K  &mt_n RCTRL L  &mt_n RSHFT SEMI        &kp SQT
   &kp TAB          &kp Z                 &kp X           &kp C         &kp V           &kp B          &kp N            &kp M     &kp COMMA        &kp DOT          &kp FSLH  &mt RALT BSLH
                                                 &lt 3 CAPSLOCK   &lt 2 SPACE  &lt LWR ESCAPE  &lt LWR ENTER  &lt 2 BACKSPACE     &lt 3 DEL
@@ -78,9 +68,9 @@
 
         raise_layer {
             bindings = <
-    &kp LPAR                 &kp RPAR            &kp KP_SLASH         &kp KP_N7         &kp KP_N8    &kp KP_N9    &kp KP_MINUS     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp LEFT_BRACE  &kp RIGHT_BRACE
+    &kp LPAR                 &kp RPAR            &kp KP_SLASH         &kp KP_N7         &kp KP_N8    &kp KP_N9    &kp KP_MINUS     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp LPAR  &kp RPAR
    &kp EQUAL  &mt_n LSHFT KP_MULTIPLY  &mt LEFT_CONTROL KP_N4  &mt_n LALT KP_N5  &mt_n LCMD KP_N6  &kp KP_PLUS  &kp LEFT_ARROW       &kp DOWN        &kp UP        &kp RIGHT          &trans           &trans
-&kp KP_COMMA                &kp KP_N0               &kp KP_N1         &kp KP_N2         &kp KP_N3   &kp KP_DOT        &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP           &trans          &trans           &trans
+&kp KP_COMMA                &kp KP_N0               &kp KP_N1         &kp KP_N2         &kp KP_N3   &kp KP_DOT        &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP          &kp END          &trans           &trans
                                                                          &trans            &trans       &trans          &trans         &trans        &trans
             >;
         };
