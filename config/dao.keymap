@@ -50,10 +50,10 @@
 
         default_layer {
             bindings = <
-&kp EQUAL      &kp GRAVE                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O          &kp P  &mt_n LEFT_BRACKET LEFT_BRACE  &mt RIGHT_BRACKET RIGHT_BRACE
-&kp MINUS  &mt_n LSHFT A  &mt_n LEFT_CONTROL S    &mt_n LALT D  &mt_n RCMD F           &kp G          &kp H     &mt_n RCMD J  &mt_n RALT K  &mt_n RCTRL L  &mt_n RSHFT SEMI        &kp SQT
-  &kp TAB          &kp Z                 &kp X           &kp C         &kp V           &kp B          &kp N            &kp M     &kp COMMA        &kp DOT          &kp FSLH  &mt RALT BSLH
-                                                &lt 3 CAPSLOCK   &lt 2 SPACE  &lt LWR ESCAPE  &lt LWR ENTER  &lt 2 BACKSPACE     &lt 3 DEL
+                    &kp EQUAL        &kp TAB                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O                          &kp P  &kp BSLH  &kp MINUS
+                    &kp GRAVE  &mt_n LSHFT A  &mt_n LEFT_CONTROL S    &mt_n LALT D  &mt_n RCMD F           &kp G          &kp H     &mt_n RCMD J  &mt_n RALT K  &mt_n RCTRL L  &mt_n RSHFT SEMI                        &kp SQT
+&mt_n LEFT_BRACE LEFT_BRACKET          &kp Z                 &kp X           &kp C         &kp V           &kp B          &kp N            &kp M     &kp COMMA        &kp DOT          &kp FSLH  &mt RIGHT_BRACE RIGHT_BRACKET
+                                                                    &lt 3 CAPSLOCK   &lt 2 SPACE  &lt LWR ESCAPE  &lt LWR ENTER  &lt 2 BACKSPACE     &lt 3 DEL
             >;
         };
 
