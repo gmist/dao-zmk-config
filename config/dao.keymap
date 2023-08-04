@@ -50,19 +50,19 @@
 
         default_layer {
             bindings = <
-                    &kp EQUAL        &kp TAB                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O                          &kp P  &kp BSLH  &kp MINUS
-                    &kp GRAVE  &mt_n LSHFT A  &mt_n LEFT_CONTROL S    &mt_n LALT D  &mt_n RCMD F           &kp G          &kp H     &mt_n RCMD J  &mt_n RALT K  &mt_n RCTRL L  &mt_n RSHFT SEMI                        &kp SQT
-&mt_n LEFT_BRACE LEFT_BRACKET          &kp Z                 &kp X           &kp C         &kp V           &kp B          &kp N            &kp M     &kp COMMA        &kp DOT          &kp FSLH  &mt RIGHT_BRACE RIGHT_BRACKET
-                                                                    &lt 3 CAPSLOCK   &lt 2 SPACE  &lt LWR ESCAPE  &lt LWR ENTER  &lt 2 BACKSPACE     &lt 3 DEL
+   &kp EQUAL        &kp TAB                 &kp Q           &kp W         &kp E           &kp R          &kp T            &kp Y         &kp U          &kp I             &kp O          &kp P  &kp BSLH  &kp MINUS
+   &kp GRAVE  &mt_n LSHFT A  &mt_n LEFT_CONTROL S    &mt_n LALT D  &mt_n RCMD F           &kp G          &kp H     &mt_n RCMD J  &mt_n RALT K  &mt_n RCTRL L  &mt_n RSHFT SEMI        &kp SQT
+&kp CAPSLOCK          &kp Z                 &kp X           &kp C         &kp V           &kp B          &kp N            &kp M     &kp COMMA        &kp DOT          &kp FSLH  &mt LBKT RBKT
+                                                   &lt 3 CAPSLOCK   &lt 2 SPACE  &lt LWR ESCAPE  &lt LWR ENTER  &lt 2 BACKSPACE     &lt 3 DEL
             >;
         };
 
         lower_layer {
             bindings = <
-        &trans  &kp UNDER  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6    &kp F7    &kp F8    &kp F9          &kp F10  &kp F11  &mt RGUI F12
-&mt LCTRL PLUS   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL     &kp N1  &kp N2    &kp N3    &kp N4     &kp N5     &kp N6    &kp N7    &kp N8    &kp N9    &kp N0           &trans
-                                     &trans    &trans     &trans     &trans    &trans    &trans
+          &trans                   &kp F11               &kp N1            &kp N2             &kp N3     &kp N4     &kp N5                &kp N6                 &kp N7                        &kp N8                          &kp N9    &kp N0  &kp F12  &trans
+&kp LEFT_BRACKET  &mt_n RSHIFT EXCLAMATION  &mt_n LCTRL AT_SIGN  &mt_n LALT POUND  &mt_n LCMD DOLLAR  &kp PRCNT  &kp CARET  &mt_n RCMD AMPERSAND  &mt_n RIGHT_ALT ASTRK  &mt_n RCTRL LEFT_PARENTHESIS  &mt_n RSHIFT RIGHT_PARENTHESIS  &kp RBKT
+          &trans                    &kp F1               &kp F2            &kp F3             &kp F4     &kp F5     &kp F6                &kp F7                 &kp F8                        &kp F9                         &kp F10    &trans
+                                                                           &trans             &trans     &trans     &trans                &trans                 &trans
             >;
         };
 
