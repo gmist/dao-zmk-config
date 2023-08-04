@@ -40,11 +40,11 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-on-release;
             global-quick-tap;
-            quick-tap-ms = <130>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 31 30 29 28 27 26 38 39 40>;
+            quick-tap-ms = <(-1)>;
+            hold-trigger-key-positions = <>;
         };
         td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
@@ -71,11 +71,11 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
+            quick-tap-ms = <(-1)>;
             global-quick-tap;
             hold-trigger-on-release;
-            hold-trigger-key-positions = <41 42 43 32 33 34 35 36 37 25 24 23 22 20 21 7 8 9 10 11 12 13>;
-            flavor = "balanced";
+            hold-trigger-key-positions = <>;
+            flavor = "tap-preferred";
         };
     };
 
