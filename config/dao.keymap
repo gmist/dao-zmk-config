@@ -44,6 +44,7 @@
             hold-trigger-on-release;
             global-quick-tap;
             retro-tap;
+            quick-tap-ms = <130>;
         };
         td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
