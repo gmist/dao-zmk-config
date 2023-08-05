@@ -41,10 +41,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            hold-trigger-on-release;
             global-quick-tap;
-            quick-tap-ms = <(-1)>;
-            hold-trigger-key-positions = <>;
+            quick-tap-ms = <0>;
+            retro-tap;
         };
         td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
@@ -70,11 +69,8 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <(-1)>;
-            global-quick-tap;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
             flavor = "tap-preferred";
         };
         td_j: td_j {
@@ -93,7 +89,7 @@
         default_layer {
             bindings = <
       &kp EQUAL        &kp TAB          &kp Q           &kp W         &kp E         &kp R        &kp T            &kp Y         &kp U          &kp I                  &kp O    &kp P  &kp BSLH  &kp MINUS
-      &kp GRAVE  &mt_l LSHFT A  &mt_l LCTRL S    &mt_l LALT D  &mt_l LCMD F         &kp G        &kp H            &td_j  &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
+      &kp GRAVE  &mt_l LSHFT A  &mt_l LCTRL S    &mt_l LALT D  &mt_l LCMD F         &kp G        &kp H     &mt_r RCMD J  &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
 &td_parenthesis          &kp Z          &kp X           &kp C         &kp V         &kp B        &kp N            &kp M     &kp COMMA        &kp DOT               &kp FSLH  &td_bkt
                                                &lt 3 CAPSLOCK   &lt 2 SPACE  &lt 1 ESCAPE  &lt 1 ENTER  &lt 2 BACKSPACE     &lt 3 DEL
             >;
