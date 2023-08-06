@@ -39,10 +39,10 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             flavor = "tap-preferred";
             quick-tap-ms = <120>;
-            retro-tap;
+            hold-trigger-key-positions = <7 8 9 10 11 12 13 25 24 23 22 21 20 32 33 34 35 36 37 41 42 43 40 39 38>;
         };
         td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
@@ -71,7 +71,7 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <120>;
             flavor = "tap-preferred";
-            retro-tap;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 26 27 28 29 38 39 40 30 31 41 42 43>;
         };
         td_equal: td_equal {
             compatible = "zmk,behavior-tap-dance";
