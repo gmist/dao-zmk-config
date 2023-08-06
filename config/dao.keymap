@@ -96,10 +96,10 @@
 
         default_layer {
             bindings = <
-      &td_equal        &kp TAB          &kp Q           &kp W         &kp E       &kp R      &kp T            &kp Y         &kp U          &kp I                  &kp O    &kp P  &kp BSLH  &td_minus
-      &kp GRAVE  &mt_l LSHFT A  &mt_l LCTRL S    &mt_l LALT D  &mt_l LCMD F       &kp G      &kp H     &mt_r RCMD J  &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
-&td_parenthesis          &kp Z          &kp X           &kp C         &kp V       &kp B      &kp N            &kp M     &kp COMMA        &kp DOT               &kp FSLH  &td_bkt
-                                               &lt 3 CAPSLOCK   &lt 2 SPACE  &kp ESCAPE  &kp ENTER  &lt 1 BACKSPACE     &lt 3 DEL
+      &td_equal        &kp TAB          &kp Q         &kp W         &kp E       &kp R      &kp T            &kp Y         &kp U          &kp I                  &kp O    &kp P  &kp BSLH  &td_minus
+      &kp GRAVE  &mt_l LSHFT A  &mt_l LCTRL S  &mt_l LALT D  &mt_l LCMD F       &kp G      &kp H     &mt_r RCMD J  &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
+&td_parenthesis          &kp Z          &kp X         &kp C         &kp V       &kp B      &kp N            &kp M     &kp COMMA        &kp DOT               &kp FSLH  &td_bkt
+                                                   &kp CAPS   &lt 2 SPACE  &kp ESCAPE  &kp ENTER  &lt 1 BACKSPACE     &lt 3 DEL
             >;
         };
 
