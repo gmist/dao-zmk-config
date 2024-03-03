@@ -13,13 +13,9 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
 
-&mt {
-    quick_tap_ms = <200>;
-};
+&mt { quick_tap_ms = <200>; };
 
 / {
     chosen {
@@ -34,9 +30,7 @@
         mt_l: mt_l {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_L";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
@@ -44,28 +38,25 @@
             quick-tap-ms = <140>;
             global-quick-tap;
         };
+
         td_parenthesis: td_parenthesis {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PARENTHESIS";
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
+
         td_bkt: td_bkt {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BKT";
             #binding-cells = <0>;
-            bindings =
-                <&kp LBKT>,
-                <&kp RBKT>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
         };
+
         mt_r: mt_r {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_R";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
@@ -73,21 +64,19 @@
             flavor = "tap-preferred";
             global-quick-tap;
         };
+
         td_equal: td_equal {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_EQUAL";
             #binding-cells = <0>;
-            bindings =
-                <&kp EQUAL>,
-                <&kp PLUS>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
         };
+
         td_minus: td_minus {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MINUS";
             #binding-cells = <0>;
-            bindings =
-                <&kp MINUS>,
-                <&kp UNDER>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
         };
     };
 
@@ -96,37 +85,37 @@
 
         default_layer {
             bindings = <
-      &kp GRAVE      &td_equal          &kp Q         &kp W         &kp E       &kp R      &kp T            &kp Y         &kp U          &kp I                  &kp O    &kp P  &td_minus  &kp BACKSLASH
-        &kp TAB  &mt_l LSHFT A  &mt_l LCTRL S  &mt_l LALT D  &mt_l LCMD F       &kp G      &kp H     &mt_r RCMD J  &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
-&td_parenthesis          &kp Z          &kp X         &kp C         &kp V       &kp B      &kp N            &kp M     &kp COMMA        &kp DOT               &kp FSLH  &td_bkt
-                                                   &kp CAPS   &lt 2 SPACE  &kp ESCAPE  &kp ENTER  &lt 1 BACKSPACE     &lt 3 DEL
+&kp GRAVE  &td_equal        &kp Q          &kp W          &kp E         &kp R         &kp T         &kp Y      &kp U            &kp I         &kp O          &kp P                  &td_minus  &kp BACKSLASH
+           &kp TAB          &mt_l LSHFT A  &mt_l LCTRL S  &mt_l LALT D  &mt_l LCMD F  &kp G         &kp H      &mt_r RCMD J     &mt_r RALT K  &mt_r RCTRL L  &mt_r RSHFT SEMICOLON  &kp SQT
+           &td_parenthesis  &kp Z          &kp X          &kp C         &kp V         &kp B         &kp N      &kp M            &kp COMMA     &kp DOT        &kp FSLH               &td_bkt
+                                                          &kp CAPS      &lt 2 SPACE   &kp ESCAPE    &kp ENTER  &lt 1 BACKSPACE  &lt 3 DEL
             >;
         };
 
         lower_layer {
             bindings = <
- &trans                   &trans               &kp N1        &kp N2             &kp N3     &kp N4     &kp N5                &kp N6               &kp N7                        &kp N8                         &kp N9   &kp N0  &trans  &trans
-&kp F11  &mt_l RSHFT EXCLAMATION  &mt_l LCTRL AT_SIGN  &mt_l LALT D  &mt_l LCMD DOLLAR  &kp PRCNT  &kp CARET  &mt_r RCMD AMPERSAND  &mt_r RALT ASTERISK  &mt_r RCTRL LEFT_PARENTHESIS  &mt_r RSHFT RIGHT_PARENTHESIS  &kp F12
- &trans                   &kp F1               &kp F2        &kp F3             &kp F4     &kp F5     &kp F6                &kp F7               &kp F8                        &kp F9                        &kp F10   &trans
-                                                             &trans             &trans     &trans     &trans                &trans               &trans
+&trans  &trans   &kp N1                   &kp N2               &kp N3        &kp N4             &kp N5       &kp N6     &kp N7                &kp N8               &kp N9                        &kp N0                         &trans   &trans
+        &kp F11  &mt_l RSHFT EXCLAMATION  &mt_l LCTRL AT_SIGN  &mt_l LALT D  &mt_l LCMD DOLLAR  &kp PRCNT    &kp CARET  &mt_r RCMD AMPERSAND  &mt_r RALT ASTERISK  &mt_r RCTRL LEFT_PARENTHESIS  &mt_r RSHFT RIGHT_PARENTHESIS  &kp F12
+        &trans   &kp F1                   &kp F2               &kp F3        &kp F4             &kp F5       &kp F6     &kp F7                &kp F8               &kp F9                        &kp F10                        &trans
+                                                               &trans        &trans             &trans       &trans     &trans                &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans
-&trans     &trans        &trans        &trans        &trans        &trans  &kp LEFT_ARROW       &kp DOWN        &kp UP     &kp RIGHT        &trans        &trans
-&trans  &kp LG(X)     &kp LG(C)     &kp LG(P)        &trans        &trans        &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP       &kp END        &trans        &trans
-                                       &trans        &trans        &trans          &trans         &trans        &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans
+        &trans  &trans        &trans        &trans        &trans        &trans          &kp LEFT_ARROW  &kp DOWN       &kp UP        &kp RIGHT     &trans        &trans
+        &trans  &kp LG(X)     &kp LG(C)     &kp LG(V)     &trans        &trans          &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END       &trans        &trans
+                                            &trans        &trans        &trans          &trans          &trans         &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&sys_reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none         &none       &none  &bootloader  &sys_reset
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-     &none     &kp K_CUT    &kp K_COPY   &kp K_PASTE         &none         &none         &none         &none         &none         &none         &none       &none
-                                              &trans         &none        &trans        &trans         &none        &trans
+&sys_reset  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &sys_reset
+            &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+            &none        &kp K_CUT     &kp K_COPY    &kp K_PASTE   &none         &none           &none         &none         &none         &none         &none         &none
+                                                     &trans        &none         &trans          &trans        &none         &trans
             >;
         };
     };
